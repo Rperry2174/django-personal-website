@@ -19,5 +19,9 @@ def index(request):
 #      return render(request, 'neuralNet/neuralNetSnippet.html', {"num1":num1, "num2":num2, "z": z})
 
 
-def addition(request, num1, num2):
-     return render(request, 'neuralNet/neuralNetSnippet.html', {"num1":num1, "num2":num2, "z": "7"})
+def simpleAddition(request, num1, num2):
+     n1=int(num1)
+     n2=int(num2)
+     z = n1 + n2
+
+     return render(request, 'neuralNet/neuralNetSnippet.html', {"num1":num1, "num2":num2, "z": z})

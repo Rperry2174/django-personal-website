@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
      url(r'^$', views.index, name='index'),
-     url(r'^(?P<num1>\d+)/(?P<num2>\d+)/$', views.addition),
+     url(r'^(?P<num1>\d+)/(?P<num2>\d+)/$', views.simpleAddition),
 ]
