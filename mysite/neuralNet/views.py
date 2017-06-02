@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from neuralNet.nnHandler import *
 
-import tensorflow as tf
 # Create your views here.
 def index(request):
      return render(request, 'neuralNet/neuralNetHome.html')
+
+def neuralNetImagePredict(request):
+     prediction = test()
+     return render(request, 'neuralNet/neuralNetSnippet.html', {"num1":"cat", "num2":"num2", "z": prediction})
 
 def neuralNetAddition(request, num1, num2):
 
