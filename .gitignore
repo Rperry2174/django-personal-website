@@ -1,2 +1,4 @@
 django-tutorials/mysite/mysite/settings_secret.py
 django-tutorials/mysite/settings_secret.py
+*.DS_Store
+*/settings_secret.py
